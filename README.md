@@ -20,7 +20,7 @@ $ ./kiki
 
 ## Abstract Data Types
 
-Aside from the data structures I used for the game, all the abstract data types I implemented for the purposes of this course can be found in the [modules](Source-Code/modules/) folder and are the following.
+In addition to the data structures I used for the game, all the abstract data types I implemented for the purposes of this course can be found in the [modules](Source-Code/modules/) folder and are the following.
 
 ### ADT Vector using ADT Map
 
