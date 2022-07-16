@@ -12,11 +12,11 @@ $ make
 $ ./kiki
 ```
 
-- On a Mac you can also simply double-click on the `Kiki's Delivery Service.app` and the game will begin. You can also play the game online [here](https://k08.chatzi.org/games/2021/competition/KikisDeliveryService/game.html).
+- On a Mac you can simply double-click on the `Kiki's Delivery Service.app` and the game will begin. You can also play the game online [here](https://k08.chatzi.org/games/2021/competition/KikisDeliveryService/game.html).
 
 ## Screenshot
 
-
+![kikisdelivery](https://user-images.githubusercontent.com/73662635/179356771-79a57c21-46bb-46b4-99f5-f8b513ca8193.png)
 
 ## Abstract Data Types
 
@@ -57,7 +57,6 @@ Aside from the data structures I used for the game, all the abstract data types 
 - In `graph_shortest_path_lengths()` I simply create a matrix and with a variation of the Floyd-Warshall algorithm, I find in each cell the optimal path between the edges. Since the graph is undirected, the matrix is symmetric. So, based on the same convention that I followed in the `vertex_pairs` map the edges appear once (that is, not both (1,2) and (2,1)) and there is no need to go trough the whole matrix, but only half, the lower "triangle". 
 
 - In `graph_shortest_path_nexts()` I use the same algorithm, but I keep both edges. I also have an additional matrix so that when I find a better path, I can save that node instead. In [ADTGraph_test.c](Source-Code/tests/ADTGraph_test.c) I have a fairly exhaustive test for the subcases of insert, remove and for the two algorithms.
-
 
 ## Game Implementation
 
